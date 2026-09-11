@@ -16,71 +16,48 @@
 
 ## Example lifecycle
 
-<p align="center">
-  <img width="100%" src="assets/example-flow.svg" alt="Animated Leviathan public example lifecycle">
-</p>
+<p align="center"><img width="100%" src="assets/example-flow.svg" alt="Animated Leviathan public example lifecycle"></p>
 
-Examples are educational starting points. The visual flow makes the intended progression explicit: one public concept, a small runnable example, placeholder configuration, expected behavior, defensive handling and finally a production-readiness checklist.
+<p align="center"><sub>Each example moves from one public concept to a small runnable pattern, placeholder configuration, expected behavior and a production-readiness checklist.</sub></p>
 
-## Example categories
+## Pattern library
 
-<table width="100%">
-<tr>
-<td width="33%" valign="top"><strong>API Basics</strong><br><sub>SDK initialization · requests · pagination · error handling</sub></td>
-<td width="33%" valign="top"><strong>Events & Integrations</strong><br><sub>Webhooks · verification · Minecraft patterns · Discord patterns</sub></td>
-<td width="33%" valign="top"><strong>Operational Safety</strong><br><sub>Configuration · logging · validation · production-readiness notes</sub></td>
-</tr>
-</table>
+<p align="center"><img width="100%" src="assets/categories-map.svg" alt="Animated Leviathan example category map"></p>
 
-## Purpose
-
-Examples in this repository should demonstrate one concept at a time without exposing production credentials or internal infrastructure. They are intended to be readable reference implementations rather than complete production applications.
-
-Examples may cover:
-
-- SDK initialization
-- public API requests
-- supported authentication-flow integration
-- pagination and error handling
-- webhook receipt and verification
-- Minecraft server integration patterns
-- Discord integration patterns
-- safe configuration handling
+<p align="center"><sub>API basics, integration events and operational safety are kept separate so every example stays small and understandable.</sub></p>
 
 ## Third-party boundaries
 
-Where an example references Microsoft authentication, Xbox Live, XSTS, Minecraft Services, Mojang/Minecraft platform services, Discord or another third-party system, it should clearly identify that platform as an external dependency and use placeholders for identifiers or credentials that are not intended to be public.
+Where an example references Microsoft authentication, Xbox Live, XSTS, Minecraft Services, Mojang/Minecraft, Discord or another third-party system, it clearly identifies that platform as an external dependency and uses placeholders for identifiers or credentials that are not intended to be public.
 
-Examples must never imply that Leviathan owns or can bypass third-party authentication, entitlement, permission or security controls.
+Examples never imply that Leviathan owns or can bypass third-party authentication, entitlement, permission or security controls.
 
 ## Example design rules
 
-A useful Leviathan example should be:
-
-1. **Small** enough to understand quickly.
-2. **Explicit** about what public interface it demonstrates.
-3. **Safe** by using placeholders instead of real credentials or identifiers.
-4. **Defensive** about validation and error handling.
-5. **Clear** about what additional work is required before production use.
+1. **Small:** demonstrate one concept at a time.
+2. **Explicit:** name the public contract being demonstrated.
+3. **Safe:** use placeholders instead of real credentials or identifiers.
+4. **Defensive:** show validation and error handling.
+5. **Practical:** state what additional work is required before production use.
 
 ## Safe example policy
 
-Never commit real access tokens, refresh tokens, client secrets, private keys, bot tokens, webhook credentials, database credentials, account details, private endpoints, personal information, or internal-only service configuration.
+Never commit real access tokens, refresh tokens, client secrets, private keys, bot tokens, webhook credentials, database credentials, account details, private endpoints, personal information or internal-only service configuration.
 
 Example logging must also avoid printing secrets.
 
 ## Production use
 
-Before production use, developers should review security, validation, authentication, error handling, rate limits, storage, observability, deployment, compatibility, and platform-specific requirements.
+Before production use, developers should review security, validation, authentication, error handling, rate limits, storage, observability, deployment, compatibility and platform-specific requirements.
 
 ## Related repositories
 
-| Repository | Role |
-| --- | --- |
-| [Leviathan API Docs](https://github.com/Lapinite/Leviathan-API-Docs) | Public API behavior |
-| [Leviathan SDK](https://github.com/Lapinite/Leviathan-SDK) | SDK interfaces and helpers |
-| [Leviathan Integrations](https://github.com/Lapinite/Leviathan-Integrations) | Integration patterns |
-| [Leviathan Docs](https://github.com/Lapinite/Leviathan-Docs) | Ecosystem documentation |
+<p align="center">
+<a href="https://github.com/Lapinite/Leviathan-API-Docs"><strong>API Docs</strong></a> ·
+<a href="https://github.com/Lapinite/Leviathan-SDK"><strong>SDK</strong></a> ·
+<a href="https://github.com/Lapinite/Leviathan-Integrations"><strong>Integrations</strong></a> ·
+<a href="https://github.com/Lapinite/Leviathan-Docs"><strong>Docs</strong></a>
+</p>
 
 ## License
 
