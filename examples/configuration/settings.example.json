@@ -1,0 +1,5 @@
+{
+  "service_url": "<PUBLIC_SERVICE_URL_WHEN_RELEASED>",
+  "access_token": "<ACCESS_TOKEN_FROM_PRIVATE_RUNTIME_CONFIGURATION>",
+  "resource_id": "<PLACEHOLDER_RESOURCE_ID>"
+}
