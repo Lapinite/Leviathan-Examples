@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/security-placeholder%20data%20only-06131d?style=flat-square" alt="Placeholder data only">
 <img src="https://img.shields.io/badge/license-Apache--2.0-06131d?style=flat-square" alt="Apache 2.0">
 
-**Small, understandable implementation patterns for public Leviathan APIs, SDKs, webhooks and integrations.**
+**Small implementation patterns for public Leviathan APIs, SDKs, webhooks and integrations.**
 
 [Guide](GUIDE.md) · [API Docs](https://github.com/Lapinite/Leviathan-API-Docs) · [SDK](https://github.com/Lapinite/Leviathan-SDK) · [Integrations](https://github.com/Lapinite/Leviathan-Integrations) · [Security](SECURITY.md)
 
@@ -18,47 +18,26 @@
 
 <p align="center"><img width="100%" src="assets/example-flow.svg" alt="Animated Leviathan public example lifecycle"></p>
 
-<p align="center"><sub>Each example moves from one public concept to a small runnable pattern, placeholder configuration, expected behavior and a production-readiness checklist.</sub></p>
-
 ## Pattern library
 
 <p align="center"><img width="100%" src="assets/categories-map.svg" alt="Animated Leviathan example category map"></p>
 
-<p align="center"><sub>API basics, integration events and operational safety are kept separate so every example stays small and understandable.</sub></p>
+## Rules
 
-## Third-party boundaries
+**Small** · one concept at a time  
+**Explicit** · name the public contract  
+**Safe** · placeholder data only  
+**Defensive** · validate inputs and failures  
+**Practical** · state what production use still requires
 
-Where an example references Microsoft authentication, Xbox Live, XSTS, Minecraft Services, Mojang/Minecraft, Discord or another third-party system, it clearly identifies that platform as an external dependency and uses placeholders for identifiers or credentials that are not intended to be public.
+Third-party platforms remain external dependencies. Examples never imply ownership of or bypasses for their authentication, entitlement, permission or security systems.
 
-Examples never imply that Leviathan owns or can bypass third-party authentication, entitlement, permission or security controls.
+Real access tokens, refresh tokens, client secrets, private keys, bot tokens, webhook credentials, database credentials, account details, private endpoints and personal information stay out of this repository.
 
-## Example design rules
+## Network
 
-1. **Small:** demonstrate one concept at a time.
-2. **Explicit:** name the public contract being demonstrated.
-3. **Safe:** use placeholders instead of real credentials or identifiers.
-4. **Defensive:** show validation and error handling.
-5. **Practical:** state what additional work is required before production use.
-
-## Safe example policy
-
-Never commit real access tokens, refresh tokens, client secrets, private keys, bot tokens, webhook credentials, database credentials, account details, private endpoints, personal information or internal-only service configuration.
-
-Example logging must also avoid printing secrets.
-
-## Production use
-
-Before production use, developers should review security, validation, authentication, error handling, rate limits, storage, observability, deployment, compatibility and platform-specific requirements.
-
-## Related repositories
-
-<p align="center">
-<a href="https://github.com/Lapinite/Leviathan-API-Docs"><strong>API Docs</strong></a> ·
-<a href="https://github.com/Lapinite/Leviathan-SDK"><strong>SDK</strong></a> ·
-<a href="https://github.com/Lapinite/Leviathan-Integrations"><strong>Integrations</strong></a> ·
-<a href="https://github.com/Lapinite/Leviathan-Docs"><strong>Docs</strong></a>
-</p>
+[API Docs](https://github.com/Lapinite/Leviathan-API-Docs) · [SDK](https://github.com/Lapinite/Leviathan-SDK) · [Integrations](https://github.com/Lapinite/Leviathan-Integrations) · [Docs](https://github.com/Lapinite/Leviathan-Docs)
 
 ## License
 
-This repository uses the Apache License 2.0. See [LICENSE](LICENSE).
+Apache License 2.0. See [LICENSE](LICENSE).
