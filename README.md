@@ -14,6 +14,14 @@
 
 </div>
 
+## Example lifecycle
+
+<p align="center">
+  <img width="100%" src="assets/example-flow.svg" alt="Animated Leviathan public example lifecycle">
+</p>
+
+Examples are educational starting points. The visual flow makes the intended progression explicit: one public concept, a small runnable example, placeholder configuration, expected behavior, defensive handling and finally a production-readiness checklist.
+
 ## Example categories
 
 <table width="100%">
@@ -39,6 +47,12 @@ Examples may cover:
 - Discord integration patterns
 - safe configuration handling
 
+## Third-party boundaries
+
+Where an example references Microsoft authentication, Xbox Live, XSTS, Minecraft Services, Mojang/Minecraft platform services, Discord or another third-party system, it should clearly identify that platform as an external dependency and use placeholders for identifiers or credentials that are not intended to be public.
+
+Examples must never imply that Leviathan owns or can bypass third-party authentication, entitlement, permission or security controls.
+
 ## Example design rules
 
 A useful Leviathan example should be:
@@ -57,23 +71,7 @@ Example logging must also avoid printing secrets.
 
 ## Production use
 
-Examples are educational starting points. Before production use, developers should review security, validation, authentication, error handling, rate limits, storage, observability, deployment, compatibility, and platform-specific requirements.
-
-## Planned example flow
-
-```text
-README / Guide
-     ↓
-Small runnable example
-     ↓
-Documented configuration
-     ↓
-Expected request / event
-     ↓
-Expected output / error handling
-     ↓
-Production considerations
-```
+Before production use, developers should review security, validation, authentication, error handling, rate limits, storage, observability, deployment, compatibility, and platform-specific requirements.
 
 ## Related repositories
 
